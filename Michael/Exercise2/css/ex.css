@@ -1,0 +1,23 @@
+#left,
+#right {
+  width: 49%;
+  float: left;
+  text-align: center;
+}
+
+#left {
+  color: darkblue;
+  border: solid thin blue;
+  margin-right: 1%;
+}
+
+#right {
+  color: red;
+  border: solid thin red;
+}
+
+#announce {
+  background-color: sandybrown;
+  text-align: center;
+}
+/*# sourceMappingURL=ex.css.map */
