@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="Css/styles.css" />
+    <title>JS-D7-Ex1</title>
+  </head>
+  <body>
+    <div id="container-header">
+      <div id="heading-header">
+        <h1 id="firstheading">Michael-Full-Stack Web Developer</h1>
+      </div>
+
+      <img id="logo" src="img/logo.png" alt="" />
+    </div>
+    <div id="navi2">
+      <div id="navi-left">
+        <a href="Contact.html">Contact</a>
+        <a href="About.html">About me</a>
+        <a href="blog.html">Blog</a>
+        <a href="#">Home</a>
+      </div>
+      <div class="navi-right">
+        <img src="img/logo.png" alt="" />
+      </div>
+    </div>
+    <!-- Swiper slides below!! -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div id="herotext" class="swiper-slide">This is my first website!</div>
+        <div class="swiper-slide">
+          <img
+            src="https://images.pexels.com/photos/161074/vienna-st-charles-s-church-downtown-church-161074.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://images.pexels.com/photos/4499745/pexels-photo-4499745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- <div id="herotext">
+      <p>This is my first website!</p>
+    </div> -->
+    <hr />
+
+    <div id="griddy">
+      <div id="item1" class="animate__animated animate__wobble">
+        <img src="img/Phone.png" alt="" height="250vh" width="100%" />
+        <p class="animate_animated animate__bounceOut">
+          Samsung Galaxy S11/S20 Plus video leaks showing phone in real life!
+        </p>
+      </div>
+      <div
+        id="item2"
+        class="animate_animated animate__heartBeat animate__delay-2s"
+      >
+        <img src="img/Debit_card_ATM.jpg" alt="" height="250vh" width="100%" />
+        <p>Police investigating three ATM explosions in two Florida counties</p>
+      </div>
+      <div
+        id="item3"
+        class="animate_animated animate__heartBeat animate__delay-3s"
+      >
+        <img src="img/Taxify-Scooters.jpg" alt="" height="250vh" width="100%" />
+        <p class="animate__animated animate__bounce animate__delay-2s">
+          E-scooter firm Bolt pulls out of 12 cities
+        </p>
+      </div>
+    </div>
+
+    <div id="end">
+      <img src="img/logo.png" alt="" />
+      <p>Michael-CodeFactory 2021</p>
+    </div>
+
+    <!-- Scripts!! -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>
